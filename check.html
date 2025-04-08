@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Protected Page</title>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "csk") {
+        // Redirect to another page if the password is correct
+        window.location.href = "show.html";
+      } else {
+        alert("Incorrect password. Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter Password to Continue</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
+

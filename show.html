@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px; /* More space between photos */
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto; /* Keeps original image height */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Photo Gallery</h1>
+
+  <div class="gallery">
+    <img src="ph1.jpg" alt="Photo 1">
+    <img src="ph2.png" alt="Photo 2">
+    <img src="ph3.png" alt="Photo 3">
+    <img src="ph4.png" alt="Photo 4">
+    <img src="ph5.png" alt="Photo 5">
+    <img src="ph6.png" alt="Photo 6">
+  </div>
+
+</body>
+</html>
+
